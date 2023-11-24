@@ -70,7 +70,7 @@ export default function Admin () {
                     </div>
                     
                     <div id ='nav-cadastro'>
-                        <p>Não possui cadastro? <a href='/cadastroCliente'>Cadastre-se</a></p>
+                        <p>Não possui cadastro? <a href='/cadastroAdmin'>Cadastre-se</a></p>
                     </div>
                 </main>
                 <div><ToastContainer /></div>

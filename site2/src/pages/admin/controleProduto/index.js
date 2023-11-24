@@ -49,7 +49,7 @@ export default function Config() {
 
 
     } catch (error) {
-      toast.error(id)
+      toast.error('não foi possivel cadastrar esse produto')
       
     }
 

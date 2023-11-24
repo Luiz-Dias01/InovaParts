@@ -513,16 +513,7 @@ export default function Compra() {
                                     </div>
 
                                 )}
-                                {/* <span style={openVermais ? null : vermaisStyle}>
-                                    <div onClick={() => setOpenProduto(true)} className='produto'>13</div>
-                                    <div onClick={() => setOpenProduto(true)} className='produto'>14</div>
-                                    <div onClick={() => setOpenProduto(true)} className='produto'>15</div>
-                                    <div onClick={() => setOpenProduto(true)} className='produto'>16</div>
-                                    <div onClick={() => setOpenProduto(true)} className='produto'>17</div>
-                                    <div onClick={() => setOpenProduto(true)} className='produto'>18</div>
-                                    <div onClick={() => setOpenProduto(true)} className='produto'>19</div>
-                                    <div onClick={() => setOpenProduto(true)} className='produto'>20</div>
-                                </span> */}
+                                
                             </div>
 
                             <div className='ver-mais'>

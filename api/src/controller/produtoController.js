@@ -86,6 +86,7 @@ server.get('/produto/busca', async (req, resp) => {
     try {
         const {nome, categoria, marca} = req.query;
         const dados = await listarPorNome(nome, categoria, marca);
+        console.log(nome)
         
         if(dados.length === 0)
             throw new Error('Produto não encontrado.');

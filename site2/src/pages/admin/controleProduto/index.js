@@ -35,7 +35,7 @@ export default function Config() {
     try {
       if (id === 0) {
         const novoProduto = await cadastrarProduto(categoria, nome, marca, modelo, disponivel, promocao, valor, detalhes, quantidade)
-        await adicionarImagem(novoProduto.id, imagem)
+        await uploadImagem(novoProduto.id)
 
         setId(novoProduto.id);
         toast.success("Registro Salvo!")
@@ -52,6 +52,24 @@ export default function Config() {
     }
 
   }
+
+
+  async function uploadImagem(id) {
+
+
+    const formData = new FormData();
+    formData.append('capa', imagem)
+
+    const reposta = await axios.put(`http://129.148.42.252:5011/produto/${id}/capa`, formData, {
+
+        headers: {
+            "Content-Type": "multipart/form-data"
+        },
+
+    })
+
+
+}
 
 
   //Adicionar Novo Produto

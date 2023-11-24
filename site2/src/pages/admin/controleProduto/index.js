@@ -2,6 +2,8 @@ import './index.scss';
 import PerifericosAdmin from '../../../components/layout/controleAdmin';
 import {cadastrarProduto, editarProduto, listarProduto, listarporNome, deletarProduto, buscarId, adicionarImagem} from '../../../api/produtoEndpoints'
 
+import axios from 'axios';
+
 import storage from 'local-storage';
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
